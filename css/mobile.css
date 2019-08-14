@@ -14,12 +14,7 @@
 header.scroll .icon-logo{width: 90px; height: 30px; background-position:0 0; }
 /* 폰트어썸 */
 .fa-align-left{font-size:2em; right: 10px;top: 10px;position: absolute;display: block;}
-#close{font-size:2em;  
-    right: 10px;
-    top: 10px;
-    position: absolute;
-    display: block;
-    z-index: 7;}
+#close{font-size:2em;right: 10px;top: 10px;position: absolute;display: block;z-index: 7;}
 /* 헤더 */
 header{height: 50px; background: #fff;width: 100%; z-index: 10; }
 /* 로고 */ 
@@ -33,14 +28,10 @@ header h1{  top: 5px;left: 20px; display: inline-block;   z-index: 7;}
 /* gnb */
 /* 세로 500 가로 270이랑 지금중에 어디에 맞춰야하지..ㅇㅁㅇ */
 nav{background: #fff;position: fixed;height: 100vh; ;width: 360px; 
- right: -360px; top: 0;   transition: 0.5s;
-}
+ right: -360px; top: 0;   transition: 0.5s;}
 nav.on{right: 0;}
-.gnb{position: relative; left: 0px;  width: 100%; 
-    text-align: left; margin-top: 70px; height: 58%;
-}
-.gnb .line{ border-bottom: 1px solid #729246; margin-left: 20px; width: 350px; 
-   margin-bottom:10px;  padding-bottom: 10px;}
+.gnb{position: relative; left: 0px;  width: 100%; text-align: left; margin-top: 70px; height: 58%;}
+.gnb .line{ border-bottom: 1px solid #729246; margin-left: 20px; width: 350px; margin-bottom:10px;  padding-bottom: 10px;}
 .gnb .wrap{float: none;width: 100%; text-align: left; margin-left: 0;}
 .gnb .wrap.on ul{height: 220px;display: block;overflow-y: auto}
 .gnb .wrap a{color: #333; font-size: 20px; }
@@ -56,8 +47,7 @@ padding-top: 0; padding-bottom: 25px; }
 .etc-nav{ overflow: hidden;   margin-top: 10px;}
 .etc-nav ul{float: right; font-size: 24px; margin-right: 60px;}
 nav .shop{background-image: url(../img/shop.jpg);   width:320px; height: 109px;margin-top: 0px; }
-/* bg */.bg-slide p{font-size: 30px;color: #fff;position: absolute; top: 60%;width: 300px;
-}
+/* bg */.bg-slide p{font-size: 30px;color: #fff;position: absolute; top: 60%;width: 300px;}
 /* 스와이퍼 */
 .bg-slide .swiper-container{height: auto;}
 .bg-slide .swiper-slide>div{height: 490px}
@@ -66,9 +56,7 @@ nav .shop{background-image: url(../img/shop.jpg);   width:320px; height: 109px;m
 .bg-slide img{width: 100%}
 /* .bg-slide{display: none;} */
 /* 페이지네이션 */
-.swiper-container-horizontal>.swiper-pagination{
- text-align: left; margin: 0 0 0px 0px; text-align: center;}
-
+.swiper-container-horizontal>.swiper-pagination{text-align: left; margin: 0 0 0px 0px; text-align: center;}
 /* 메인베너 */
 .main-banner{height: auto;top: 0; overflow: hidden; }
 .main-banner .wrap{width: 100%; text-align: left;height: 90px;left:100%;}
@@ -77,20 +65,17 @@ nav .shop{background-image: url(../img/shop.jpg);   width:320px; height: 109px;m
 .main-banner .wrap:nth-child(4):hover{background: #5d838f;}
 .main-banner .wrap.on{top: initial; left:0;}
 .main-banner .wrap strong{font-size: 18px; display: block;margin: 0;padding-top: 8px;}
-.main-banner .wrap div{position: absolute;bottom: 0px; height:40%; padding-top:0px;left: 100px;
-    transform: translateX(0%);top: 0;width: 70%}
+.main-banner .wrap div{position: absolute;bottom: 0px; height:40%; padding-top:0px;left: 100px;transform: translateX(0%);top: 0;width: 70%}
 .main-banner .wrap a{margin-top:0 }
 .main-banner .wrap p,.main-banner .wrap strong{width: 220px;margin:0;}
 .main-banner .wrap div p{font-size: 12px;position: relative; top: -12px}
 .main-banner .wrap span{margin-bottom: 12px;width: 100%}
-
 /* conviction */
 .conviction .swiper-container{margin-top: 0;height: 380px;}
 .conviction .con-text{margin: 60px auto 50px;}
 .conviction .swiper-slide p{font-size: 14px; padding: 20px;}
 .conviction .swiper-pagination-bullet{font-size: 14px;}
 .conviction .swiper-pagination-bullet-active{font-size: 18px;}
-
  /* 뉴스룸 */
  #newsroom{margin-top: 0}
  #newsroom .icon-news{display: none}
@@ -104,22 +89,17 @@ nav .shop{background-image: url(../img/shop.jpg);   width:320px; height: 109px;m
  #newsroom .news img{width: auto; height: 100%;}
  #newsroom .swiper-slide.swiper-slide-active .news img{width: 100%; height: auto;}
  #newsroom .swiper-slide.swiper-slide-active{font-size: 12px; width: 280px; height: 340px;}
- #newsroom .swiper-pagination{
-    font-size: 20px; 
-     top:0; left: 50%;bottom: initial;width: auto;right:initial; transform: translateX(-50%);
-  } 
+ #newsroom .swiper-pagination{font-size: 20px; top:0; left: 50%;bottom: initial;width: auto;right:initial; transform: translateX(-50%);} 
 #newsroom .tag{display: none }
 #newsroom .date{display: none }
 #newsroom .minitag{ display: none; }
 #newsroom .swiper-slide.swiper-slide-active .minitag{ display:block; }
-
 .factory{padding:0 0 150px; margin-top:0; overflow: hidden;}
 .factory img{ max-width:100%;margin-top:155px}
 .factory .text-box{text-align: left;padding-left: 20px; }
 .factory a {height: 60px;width: 100px;line-height: 60px;font-size: 18px; right: 20px;}
 .factory p{ padding-right: 130px; font-size: 14px}
 .factory h2{ padding-top: 20px;}
-
 footer{padding-top:20px}
 footer .sns {left: 0}
 footer .sns b{margin-top: 0;    position: relative;bottom: 4px;}
@@ -132,20 +112,9 @@ footer .site-nav li{padding: 0 8px;line-height: 12px}
 footer .site-nav li a{font-size: 10px;}
 footer .address li{font-size:10px; border: 0;  padding: 0 0;float: initial; }
 footer small{font-size: 10px;color: #aaa}
-
-
 .family-site .drop-up{text-align: left;height: 270px;}
 .family-site .drop-up span{width: 2px; height: 90%; left:150px; top:50%; transform: translateY(-50%);}
 .family-site .drop-up div>ul{float: none;}
 .family-site .drop-up h2.on{font-size: 30px;}
 .family-site .site{display: none; position: absolute; left:160px; top:10px;}
 .family-site .drop-up ul ul li a{line-height: 30px;}
-
-/* 컨빅션 슬라이드 안넘어가게 하기
-뉴스룸 일반슬라이드 높이
-.gnb .wrap .big    a링크 안타지게 하는법
-*/
-
-/* 모바일 nav 펼쳐졋을때 높이 구하기 전체 - header - shop/fac 남은부분
-conviction 부분 모바일상태에서 리사이즈하면 처음부분이 안나온다.
-*/

@@ -5,7 +5,6 @@ $(function(){
       $('.main-banner .wrap').addClass('on');
     })
   });
-
   // 스와이프
   // bg-slide
   var bgSwiper = new Swiper('.bg-slide .swiper-container', {
@@ -15,7 +14,6 @@ $(function(){
     }, 
     loop: true,
   });
-
   // conviction
   var menus=['풀무원사업','히스토리','지속경영','가치체계'];
   var convictionImg=['img/conbg1.jpg','img/conbg2.jpg','img/conbg3.jpg','img/conbg4.jpg'];
@@ -31,8 +29,7 @@ $(function(){
         return '<span class="' + className + '">' + (menus[index]) + '</span>';
       },  
     },
-  });
-  
+  });  
   // newsroom
   var newsroomSwiper = new Swiper('#newsroom .swiper-container', { 
     slidesPerView: 'auto',                  
@@ -43,12 +40,10 @@ $(function(){
       type: 'fraction',            
     },loop: true
   });
-
   //네비게이션
   $(window).on("load",function(){
     $(".content").mCustomScrollbar();
-  });
- 
+  }); 
   //모바일 메뉴
   $('#btn-menu').click(function(){    
     $('nav').addClass('on')
@@ -57,7 +52,6 @@ $(function(){
   $('#close').click(function(){
     $('nav').removeClass('on')
   })
-
   //gnb 스크롤
   var scrollTop=0;
   $(window).scroll(function(){
@@ -68,7 +62,6 @@ $(function(){
       $('header').removeClass('scroll')
     }
   })
-
   //언어선택
   $('.lang a').click(function(e){
     e.preventDefault();
@@ -81,12 +74,9 @@ $(function(){
     $(this).find('i').toggleClass('on');
     $('.drop-up').stop().slideToggle();
   })
-
-
   $('.gnb .wrap ul li a, nav .etc-nav ul li a, .main-banner .wrap a, .conviction .con-text a, #newsroom .news a, .factory div a,footer div a, .drop-up .site li a ').click(function(e){
     e.preventDefault();
   })
-
   //리사이즈
   $(window).resize(function(){
     var windowW=$(window).width();
@@ -94,9 +84,7 @@ $(function(){
     $('.gnb a').removeClass('active');
     $('.gnb > .wrap > .big, .gnb .wrap').off('mouseenter');
     
-    $('.gnb').off('mouseleave');
-    
-    
+    $('.gnb').off('mouseleave');    
     if(windowW>767){//pc
       $('.gnb > .wrap > .big').on('mouseenter',function(){
         $('.gnb > li > a').removeClass('active');
@@ -112,14 +100,12 @@ $(function(){
             $('header').removeClass('scroll')
         }
       })      
-
       // 네비아이콘
       $('.gnb .wrap').on('mouseenter',function(){
         var i=$(this).index();
         var className='icon icon-navicon'+(i+1);
         $('.depth2-bg i').removeClass().addClass(className);
-      })
- 
+      }) 
       $(".bg-slide #bg1").attr('src','img/bg1.png');
       $(".bg-slide #bg2").attr('src','img/bg2.png');
       $(".bg-slide #bg3").attr('src','img/bg3.png');
@@ -138,13 +124,10 @@ $(function(){
           $(this).parent('.wrap').addClass('on')
         }
       })
-
       $(".bg-slide #bg1").attr('src','img/m-bg1.png');
       $(".bg-slide #bg2").attr('src','img/m-bg2.png');
       $(".bg-slide #bg3").attr('src','img/m-bg3.png');
       $(".factory img").attr('src','img/dufu-m.jpg');   
-
-
       //패밀리사이트 
       $('.family-site .drop-up ul ul').hide()
       $('.family-site .drop-up ul:nth-child(1) ul').show();
@@ -157,14 +140,11 @@ $(function(){
         $('.family-site .drop-up ul ul').hide()
         $(this).next().show();
       })
-
       var windowH=$(window).height();       
       var shopH=$('nav').not(':hidden').find('.shop').outerHeight();
       var etcH=$('nav').not(':hidden').find('.etc-nav').outerHeight();
-      var ulH=windowH-(shopH+etcH+etcH);
-            
+      var ulH=windowH-(shopH+etcH+etcH);            
       $('nav').not(':hidden').find('.gnb').height(ulH);     
-
     }
   }).resize();
 
