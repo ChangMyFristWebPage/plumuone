@@ -1,0 +1,266 @@
+@charset 'UTF-8';
+/* reset, common */
+@font-face{
+   font-family: 'NotoSansCJKkr';
+   src: url(../NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf);
+   font-weight:200;
+}
+*{margin: 0; padding: 0;}
+body{background: #fff;font-family: 'NotoSansCJKkr';}
+li{list-style: none;}
+a{text-decoration: none; color:#000; display: inline-block;}
+span{display: inline-block;}
+button{background: none; border:none;}
+.mblind{display: none}
+.blind{font-size: 0; position: absolute; left:-9999px;}
+.center{max-width: 1200px; margin: auto; position: relative;}
+.loading{
+   position: fixed; top:0; left:0; right:0; bottom:0; background: #fff; z-index: 1000;
+   font-family: sans-serif; font-size: 20px;
+}
+.loading span{position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);}
+
+/* 스프라이트이미지 규칙 */
+.icon{  display: inline-block; background-image: url(../img/sprite.png);}
+.icon-logo{width: 160px; height: 57px; background-position:-619px 0px; }
+.icon-logo-black{width: 160px; height: 57px; background-position:-819px 0px; }
+.icon-conviction{width: 500px; height: 52px; background-position:-1200px 0; }
+.icon-square1{width: 182px;height: 182px; background-position:  0 -299px;}
+.icon-square2{width: 184px;height: 182px; background-position: -404px -299px;}
+.icon-square3{width: 182px;height: 182px; background-position:-810px -299px;}
+.main-banner .wrap:hover .icon-square1{width: 182px;height: 182px; background-position: -202px -299px;}
+.main-banner .wrap:hover .icon-square2{width: 182px;height: 182px; background-position: -608px -299px;}
+.main-banner .wrap:hover .icon-square3{width: 182px;height: 182px; background-position:-1012px -299px}
+.icon-navicon1{width: 120px;height: 120px; background-position: 0 -120px; }
+.icon-navicon2{width: 120px;height: 120px; background-position: -140px -120px; }
+.icon-navicon3{width: 120px;height: 120px; background-position: -280px -120px; }
+.icon-navicon4{width: 120px;height: 120px; background-position: -420px -120px; }
+/* conviction */
+.icon-business1{background-position: 0 0;}
+.icon-business2{background-position: -120px 0;}
+.icon-business3{background-position: -240px 0;}
+.icon-business4{background-position: -360px 0;}
+.icon-right{width: 471px; height: 140px; background-position: -500}
+.icon-va1{width: 60px;height: 80px; background-position:-224px -672px }
+.icon-va2{width: 80px;height: 64px; background-position:-224px -772px }
+.icon-va3{width: 48px;height: 80px; background-position:0px -660px }
+.icon-va4{width: 60px;height: 80px; background-position:-1px -759px }
+.icon-va5{width: 80px;height: 70px; background-position:0px -858px }
+.icon-news{width: 195px;height: 31px; background-position: -1820px 0;}
+/* 로고 */
+header{position: fixed; width: 100%; height: 80px; z-index: 10;box-sizing: border-box;}
+header h1{position: relative; top: 16px; }
+
+
+/* 언어선택 */
+.center .lang{position: absolute; right: 0; top: 10px;}
+.center .lang li{float: left;  font-size: 12px; margin-left: 20px;}
+.center .lang a{color:#fff;}
+.center .lang a.header{color: #888888;}
+.center .lang li.on{ border-bottom: 2px solid #9cd829;} 
+.center .lang li.on a{color: #9cd829 !important;}
+
+/* gnb */
+nav{position: relative; max-width: 1200px; margin:auto;top:-40px; height: 40px;
+   display: block; text-align: center;z-index: 6;}
+.gnb{position: relative;z-index: 4;display: inline-block; bottom: 10px;}
+.gnb .wrap{float: left;text-align: center; }
+.gnb .wrap a{font-size: 20px ;color: #fff;}
+.gnb ul{display: none;}
+.gnb .wrap ul li a{font-size: 14px !important; padding-top:20px;  ;color: #777; }
+.gnb .wrap ul li a:hover{text-decoration-line: underline;}
+.gnb .wrap:hover > a{color:#9cd829 !important; }
+.gnb .wrap ul li a.active{position: absolute;}
+.gnb .wrap a.big{position: relative; width: 170px;}
+.gnb .wrap ul li{display: block}
+
+.depth2-bg{
+   height: 400px; width: 100%; background: #fff;
+   position: absolute; top:80px ;display: none;text-align: left;
+   
+}
+
+.depth2-bg i{margin-top: 20px;margin-left: 20px;}
+
+/* 스크롤시 변경될 header의 스타일 */
+header.scroll{background: #fff;border-bottom: 1px solid #9cd829;}
+header.scroll .gnb .wrap a{color: #666}
+header.scroll .gnb .wrap ul li a{color: #888}
+header.scroll .icon-logo{background-position:-819px 0px; }
+header.scroll .center .lang a{color: #888}
+#close{display: none;}
+/* 모바일 햄버거 */
+
+/* section =================================================== */
+section{}
+
+/* bg-slide */
+.bg-slide .swiper-pagination{max-width: 1200px; margin: auto; text-align: center;}
+.bg-slide .swiper-container{height: 700px;}
+.bg-slide .swiper-slide-active img {
+   position: relative;
+   left:50%;
+   transform: translateX(-50%);                     
+ }
+.bg-slide .swiper-container-horizontal>.swiper-pagination{
+   text-align: left;max-width: 1200px; margin: auto; position: relative; top: -150px}
+
+.bg-slide .swiper-pagination-bullet {
+   width: 14px;
+   height: 14px;
+   display: inline-block;
+   border-radius: 100%;
+   background: #fff;
+   opacity: 1;
+   margin: 0 20px;
+   position: relative;
+}
+.bg-slide .swiper-pagination-bullet-active {  
+   background:#fff; text-align: center;
+}
+.bg-slide .swiper-pagination-bullet::after{content: '';
+   border: 1px solid #fff; width: 30px; height: 30px; 
+   border-radius: 50%;position: absolute; left: -9px;display: inline-block;
+   bottom: -9px; opacity: 0; }
+.bg-slide .swiper-pagination-bullet-active::after{opacity: 1;}
+.bg-slide .swiper-pagination-current{color:#fff;position: absolute;}
+
+.bg-slide p.mainText{ z-index: 4  ; font-size: 60px;width: 960px;color: #fff; font-weight: bold ; 
+position: absolute;text-align: left;top:50%; display: none;}
+.bg-slide .swiper-slide-active p{display: block;}
+.bg-slide .swiper-slide>div{max-width: 1200px;margin:auto}
+
+/* 바른먹거리 영역================================= */
+.main-banner{position: relative; top: -80px ; z-index: 6;max-width: 1140px; margin: auto; }
+.main-banner::after{display: block;  content: '';clear: both}
+.main-banner .wrap{float: left; width: 33.33%; text-align: center;position: relative;
+ height: 380px; transition: 0.5s;opacity: 0; top:150px;}
+
+.main-banner .wrap.on{opacity: 1; top:0;}
+.main-banner .wrap a{margin-top:20px; }
+.main-banner .wrap:nth-child(2){background: #729246;}
+.main-banner .wrap:nth-child(3){background: #bfb073;transition-delay: 0.2s}
+.main-banner .wrap:nth-child(4){background: #5d838f;transition-delay: 0.4s}
+.main-banner .wrap:nth-child(2):hover{background: #36461f;}
+.main-banner .wrap:nth-child(3):hover{background: #595541;}
+.main-banner .wrap:nth-child(4):hover{background: #2c3f46;}
+/* 텍스트 */
+.main-banner .wrap strong{font-size: 24px; display: block;}
+.main-banner .wrap p,.main-banner .wrap strong{ color: #fff; width: 210px;  margin: auto;}
+.main-banner .wrap div p{top: -8px}
+.main-banner .wrap div{padding-top: 20px}
+.main-banner .wrap span{height: 2px;width: 100%; background-color: #fff;}
+
+/* 가치체계======================================================= */
+.conviction{margin-bottom:100px;}
+.conviction .swiper-container{margin-top: 120px; height:340px;}
+.conviction .swiper-slide {background-size:cover; background-repeat: no-repeat; background-position: center;}
+.conviction .con-text{max-width:800px; margin: 100px auto 50px; text-align: center;}
+.conviction .swiper-slide p{font-size: 18px; color: #fff; text-align: justify;}
+.conviction a{color: #fff; border:1px solid #eeffef; padding: 4px 10px; margin-top:20px;}
+.conviction a:hover{ background: #fff; color: #444; transition: 0.5s}
+
+.conviction .swiper-pagination{top:20px; bottom: initial;}
+.conviction .swiper-pagination-bullet{ 
+outline: none;
+  width:auto; height: auto; margin: 0 10px; border-radius: 0; background: none; font-size: 32px; color: #fff; opacity: 0.5;
+}
+.conviction .swiper-pagination-bullet-active{font-size: 40px; opacity: 1;}
+
+/* newsroom */
+#newsroom .swiper-container{position: relative; padding: 20px; box-sizing: border-box;  height: 530px; max-width: 1200px;}
+#newsroom .news>a{display: block}
+#newsroom .news ul li{float: left;  border: 1px solid #888; margin: 0 2px; padding: 0 4px; line-height: 18px;}
+#newsroom .tag{position: absolute; bottom: 10px; left: 10px; }
+#newsroom .tag li a{color: #888;   font-size: 12px }
+#newsroom .date{color: #888; position: absolute; right: 10px; bottom: 10px;font-size: 12px}
+#newsroom .minitag{position: absolute; color: #fff; right:8px; top: 8px;
+    max-width: 88px; height: 24px; text-align: center; font-size: 14px; letter-spacing: 0;line-height: 24px; padding:0 4px;}
+#newsroom .minitag1{background:#e7b973;}
+#newsroom .minitag2{background:#89b8bf;}
+#newsroom .minitag3{background:#d396f3;}
+#newsroom .minitag4{background:#9cd829;}
+#newsroom h3{font-size: 18px;color: #333; padding: 16px 10px 10px 10px ;height:auto;text-align: left;}
+#newsroom h3:hover{ text-decoration-line: underline;}
+
+#newsroom p{color: #555; margin: 0px 10px 0px 10px; display: none;}
+
+#newsroom{ margin-top: 200px;}
+#newsroom .news img{width: 100%; display: block;}
+#newsroom .swiper-slide{
+   width: 340px;
+   height: 70%;top:30%;box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+   text-align: center;
+   font-size: 50px;
+   background: #fff;  
+}
+#newsroom .swiper-slide .slide-text{display: none;}
+
+#newsroom .swiper-slide-active h3{font-size: 24px;}
+#newsroom .swiper-slide-active .slide-text{display: block}
+#newsroom .swiper-slide-active a p{display: block;}
+
+#newsroom .swiper-slide.swiper-slide-active{
+    background:#fff !important; color: #fff !important; 
+    text-align: center;
+    font-size: 18px;
+    text-align: left; top:0;
+    width: 460px; height: 100%;
+}
+#newsroom .swiper-pagination{
+    text-align: right; font-size: 40px; color:#9cd829; margin:0;
+    top: 40px; left: initial ;bottom: initial;width: auto;right: 0;
+}
+#newsroom .icon-news{position: absolute; right: 0px;padding-bottom: 8px; top: 0;}
+#newsroom .under-line{border-bottom: 2px solid #9cd829; 
+  position: absolute; width: 300px;right: 0; top: 40px}
+
+.factory{width: 100%; background:#729246; height: 180px; margin-top: 100px; text-align: center; position: relative;}
+.factory img{position: absolute; left: 0;}
+.factory h2{color: #fff;font-size: 28px;padding-top:30px  }
+.factory p{color: #fff;font-size: 18px;padding-top: 10px;}
+.factory a{height: 100px; width: 200px; background:#3f3d33; color:#fff ;font-size:32px;
+line-height: 90px;position: absolute; right: 0; top:40px;}
+footer{text-align: center;}
+footer h1{position: absolute ; top: 60px} 
+footer .sns{margin-top: 20px;text-align: center;}
+footer .sns b{margin-right: 20px;font-size: 24px;    margin-top: 4px;}
+footer .sns span{font-size: 2em;display: inline-block;margin-right: 20px}
+footer .sns div{ font-size: 28px;   }
+footer .site-nav li{float: left;}
+footer .address li{float: left;  }
+footer .address{  margin: auto;   display: inline-block;padding-top: 20px;padding-bottom: 10px}
+footer .address li{padding: 0 24px; border-right: 1px solid #aaa}
+footer .address li:nth-last-child(1){border-right:0px}
+footer .site-nav{    margin: auto;   display: inline-block;padding-top: 20px}
+footer .site-nav li a{color: #888}
+footer .site-nav li{padding: 0 24px; border-right: 1px solid #aaa}
+footer .site-nav li:nth-last-child(1){border-right:0px}
+footer .fa-caret-right{font-size: 1.5em ; }
+footer .sns .fab{margin-right: 36px;}
+footer .sns span:nth-child(1){margin-right: 20px;}
+footer .sns span a{position: absolute; top: 4px;  }
+footer .sns a{color: #888}
+footer .sns-link{display: inline-block;}
+footer .row{color: #888 }
+footer small{color: #888}
+
+.family-site{position: relative;background: #ddd; text-align: center;margin-top: 20px;height: 24px;padding-bottom: 4px;}
+.family-site>a{color: #666;}
+.family-site a i{margin-left: 16px;font-size: 24px;color: #666;transition: 0.3s;top: 4px;position: relative;}
+.family-site a i.on{transform: rotate(180deg); transition: 0.3s;}
+.family-site .drop-up{display: none; background: #ddd;position: absolute; width: 100%; bottom: 26px;}
+.family-site .drop-up div{ display: inline-block}   
+.family-site .drop-up span{height: 2px; width: 70%; background: #666; position: absolute;top: 14%;
+   right: 50%; transform: translateX(50%)}
+.family-site .drop-up div>ul{float: left;margin: 0 30px 40px; }
+.family-site .drop-up h2{color: #666; margin: 20px 0;}
+.family-site .drop-up ul ul li a{line-height: 36px;color: #777;}
+.family-site .drop-up ul ul li a:hover{text-decoration-line: underline;}
+
+@media (min-width:768px) and (max-width:1100px){
+   .gnb{float: right;}
+   .gnb .wrap:last-child .big{
+      width: auto;
+   }
+}
