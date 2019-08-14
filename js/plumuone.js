@@ -158,25 +158,12 @@ $(function(){
         $(this).next().show();
       })
 
-      // var windowH;      
-      // var shopH;
-      // var etcH;
-      // var ulH;    
-      // $(window).resize(function(){
-      //   ulHeight();
-      // }).resize();
-         
-      // function ulHeight(){
-      //   windowH=$(window).height();
-       
-      //   shopH=$('nav').not(':hidden').find('.shop').outerheight();
-      //   etcH=$('nav').not(':hidden').find('.etc-nav').outerHeight();
-      //   ulH=windowH-(shopH+etcH);
-    
-        
-      //   $('nav').not(':hidden').find('.gnb').height(ulH);
-      // }
-
+      var windowH=$(window).height();       
+      var shopH=$('nav').not(':hidden').find('.shop').outerHeight();
+      var etcH=$('nav').not(':hidden').find('.etc-nav').outerHeight();
+      var ulH=windowH-(shopH+etcH+etcH);
+            
+      $('nav').not(':hidden').find('.gnb').height(ulH);     
 
     }
   }).resize();
