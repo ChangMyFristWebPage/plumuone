@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/plumuone.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width:767px)">
+    <title>풀무원</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js" integrity="sha256-AKEjDiK2rz+d8TSPLNVNydvgJvOkG5veMAnc79FkiuE=" crossorigin="anonymous"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/fontloading.js"></script>
+    <script src="js/plumuone.js"></script>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1><a href="#" class="icon icon-logo"><span class="blind">풀무원</span></a></h1>               
+            <!--pc버전에서만 보임  -->
+            <ul class="lang">
+                <li class="on"><a href="#" >KR</a></li>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">JP</a></li>
+            </ul>  
+            <!-- 모바일 햄버거 -->          
+            <button id="btn-menu" class="mblind fas fa-align-left"><span class="blind">메뉴</span></button>
+        </div>
+        <span class="liner"></span>
+        <nav>                  
+            <!-- 모바일닫기 -->
+            <button id="close"><i class="material-icons">close</i></button>
+            <ul class="gnb">
+                <li class="wrap">                                           
+                    <a href="#" class="big">회사소개</a>
+                    <div class="line "></div>
+                    <ul class="mCustomScrollbar">
+                        <li><a href="#">가치체계</a></li>
+                        <li><a href="#">히스토리</a></li>
+                        <li><a href="#">동반성장경영</a></li>
+                        <li><a href="#">사회책임경영</a></li>
+                        <li><a href="#">지속경영</a></li>
+                        <li><a href="#">IR</a></li>
+                        <li><a href="#">기업지배구조</a></li>
+                        <li><a href="#">풀무원사업</a></li>
+                        <li><a href="#">풀무원브랜드</a></li>    
+                    </ul>
+                </li>
+                <li class="wrap">                 
+                    <a href="#" class="big">바른먹거리&로하스</a>
+                    <div class="line"></div>
+                    <ul class="mCustomScrollbar">
+                        <li><a href="#">로하스</a></li>
+                        <li><a href="#">바른먹거리 원칙</a></li>
+                        <li><a href="#">로하스 레시피</a></li>
+                        <li><a href="#">멀티미디어</a></li>
+                        <li><a href="#">자료&공지</a></li>  
+                    </ul>
+                </li>
+                <li class="wrap">
+                    <a href="#" class="big">인재채용</a>
+                    <div class="line"></div>
+                    <ul class="mCustomScrollbar">
+                        <li><a href="#">인재 모시기</a></li>
+                        <li><a href="#">인재 키우기</a></li>
+                        <li><a href="#">인재 도우미</a></li>
+                        <li><a href="#">한눈에보는 풀무원</a></li>
+                    </ul>
+                </li>
+                <li class="wrap">       
+                    <a href="#" class="big">풀무원Shop</a>                    
+                </li> 
+            </ul>
+            <span class="shop"><a href="#"></a></span>
+            <div class="etc-nav mblind">                
+                <a href="#" class="fac"></a>
+                <ul>
+                    <li><a href="#">사이버감사실</a></li>
+                    <li><a href="#">로하스 아카데미</a></li>
+                    <li><a href="#">고객기쁨센터</a></li>
+                </ul>
+            </div>
+        </nav>          
+        <div class="depth2-bg">
+            <div class="center ">             
+                <i class="icon icon-navicon1"></i>
+            </div>
+        </div>                
+    </header>
+    <article class="bg-slide">          
+        <h2 class="blind">메인슬라이드</h2>        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">        
+                <div class="swiper-slide">
+                    <div>
+                        <p class="mainText">풀무원은, 자연과 공존할 수 있는 건강한 삶을 소망합니다.</p> 
+                        <img src="img/bg1.png" alt="bg1" id="bg1"> 
+                    </div>                    
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p class="mainText">바른 마음으로 정직하게 만듭니다.
+                                    까다롭지만 원칙을 지켜 만듭니다.</p> 
+                        <img src="img/bg2.png" alt="bg2" id="bg2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <p class="mainText">
+                                    건강한 몸과 마음은 행복한 삶의 기본입니다.</p> 
+                        <img src="img/bg3.png" alt="bg3" id="bg3">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </article>
+
+    <section>
+        <!-- main-banner -->
+        <article class="main-banner">
+            <h2 class="blind">바른먹거리로하스</h2>
+            <div class="wrap">
+                <a href="#">
+                    <i class="icon icon-square1" ></i>
+                    <div>
+                        <strong>바른먹거리 캠페인</strong>
+                        <span></span>
+                        <p>어렸을때 입맛이 평생건강</p>
+                    </div>    
+                </a>
+            </div>
+            <div class="wrap">
+                <a href="#"  >
+                    <i class="icon icon-square2"></i>
+                    <div>
+                        <strong>로하스</strong>
+                        <span></span>
+                        <p>여러분도 로하스 식생활을 시작해보세요</p>
+                    </div> 
+                </a>
+            </div>
+            <div class="wrap">
+                <a href="#" >
+                    <i class="icon icon-square3" ></i>
+                    <div>
+                        <strong>바른먹거리 </strong>
+                        <span></span>
+                        <p>내  가족의 건강과 행복을위한 바른먹거리는 무엇일까요? </p>
+                    </div>    
+                </a>
+            </div>  
+        </article>
+
+        <!-- conviction -->
+        <div class="conviction">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="con-text">
+                            <p>한국의 대표적인 바른먹거리 기업인 풀무원은 국내에서 신선식품과 음료를 중심으로
+                                건강기능식품, 급식과 컨세션, 친환경식품유통, 먹는샘물, 발효유 등 다양한 영역에서 사업을 펼치고 있습니다.
+                                1991년 미국에 법인을 설립하고 해외에 진출한 이래 중국과 일본에도 법인을 설립해 세계 1위 두부기업의 위상을
+                                확고히 하며 글로벌 기업으로 성장하고 있습니다.</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="con-text">
+                            <p>1981년 5월 12일 서울 강남의 압구정동에 작은 채소 가게가 문을 열었습니다. 이름은 ‘풀무원농장 무공해 농산물 직판장’. 원경선의 풀무원농장과 정농회 농부들이 기른 유기농산물을 팔았던 이 곳은 한국 최초의 유기농 가게였으며 기업 풀무원의 모태였습니다. 이 땅에 유기농의 가치를 확산시키는 사업이 시작되었음을 알리는 깃발과도 같았던 작은 가게 풀무원. 긴 세월이 흐른 지금 풀무원은 한국에서 가장 존경받는 기업, 글로벌 로하스 대표 기업이 되어 자연과 인간의 아름다운 조화를 실현해 나가고 있습니다.</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="con-text">
+                            <p>풀무원은 ‘나와 내 가족의 건강과 지구환경의 지속성을 실천하는 생활문화를 가능하게 하는 제품과 서비스를 제공하는 기업’이라는 하나의 가치를 꾸준히 유지함으로써 지속경영을 실천해오고 있습니다.</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="con-text">
+                            <p>백년에 이르는 생애 동안 이기주의를 벗고 인간과 인간, 인간과 자연이
+                                서로 조화롭게 살 수 있는 길을 찾아 끊임없이 도전했던 농부 원경선.
+                                풀무원 정신은 스스로 일군 풀무원농장에서 유기농을 통해 이웃사랑,
+                                생명존중을 실천하고, 나아가 전쟁 없는 세상, 세계 평화를 널리 알리고
+                                인도하는 데 한평생을 바쳤던 위대한 농부이자
+                                성실한 평화주의자 원경선으로부터 시작됩니다.</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>      
+
+        <!-- 스와이퍼 뉴스룸 -->
+        <div id="newsroom">
+            <div class="swiper-container">
+                <span class="icon icon-news"></span>
+                <span class="under-line"></span>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <div class="news"><div> 
+                        <span class="minitag minitag1">브랜드뉴스</span>                             
+                        <a href="#">                                                             
+                            <img src="img/news9.png" alt="김치박물관">                                                                                          
+                            <h3>풀무원 뮤지엄김치간, 어린이날 맞아 어린이·청소년 무료 입장</h3>
+                                                    
+                            <p>5월 5일 하루동안 18세 이하입장료 무료, 성인50% 할인 김치 낱말 퍼즐, 
+                                    가면 꾸미기 등 참여형 이벤트를 비롯한 푸짐한 경품 증정 행사 마련</p>                            
+                        </a>
+                        <article class="slide-text"> 
+                            <ul class="tag">
+                                <li><a href="#"> #김치간</a></li>
+                                <li><a href="#"> #어린이날</a></li>
+                                <li><a href="#"> #김치박물관</a></li>                    
+                            </ul>
+                            <span class="date">2019-04-24</span></div>
+                        </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news">
+                        <span class="minitag minitag1">건강생활</span>
+                        <a href="#">
+                        <img src="img/news10.png"  alt="노니쥬스">
+                            <h3>풀무원녹즙, 깔끔하고 부드러운 노니주스 ‘노니엔클리어’ 출시</h3>
+                        
+                            <p>베트남산 안전한 ‘노니’만 선별… 3중 필터링 거쳐 제품 안전성 강화,
+                                이탈리아산 지중해 ‘칸탈로프멜론’ 더해 맛과 영양 모두 사로잡아.</p>
+                        </a>
+                        <article class="slide-text">
+                            <ul class="tag">
+                                <li> <a href="#"> #건강식품</a></li>
+                                <li> <a href="#"> #풀무원주스</a></li>
+                                <li> <a href="#"> #풀무원다논</a></li>
+                            </ul>
+                        <span class="date">2019-04-22</span>
+                        </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="news">
+                        <span class="minitag minitag1">건강생활</span>
+                        <a href="#">
+                            <img src="img/news8.png" alt="액티비아">
+                            <h3>풀무원다논, 건강한 고객 일상 속 ‘액티비아
+                                    그린라이프 캠페인’ 전개 </h3>                                       
+                            <p>액티비아 화이트를 즐기는 고객의 일상을 담은 유튜브 영상 공개
+                                    자이요가명상, 인플루언서와의 협업 등 다양한 분야의 캠페인 활동 진행.   </p>
+                        </a>
+                        <article class="slide-text">
+                            <ul class="tag">
+                                <li> <a href="#"> #건강식품</a></li>
+                                <li> <a href="#"> #풀무원주스</a></li>
+                                <li> <a href="#"> #풀무원다논</a></li>
+                            </ul>
+                            <span class="date">2019-04-21</span>
+                        </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="news">
+                            <span class="minitag minitag1">건강생활</span>
+                            <a href="#">
+                                <img src="img/news7.png" alt="성공vs실패하는 다이어트">
+                                <h3>이어터 825명 분석했더니… 다이어트 
+                                        성공하는 식습관과 실패하는 식습관은?  </h3>
+                                        
+                                <p>날이 더워지면 오는 고민거리, 바로 다이어트 입니다. 거창한 다이어트 
+                                    방법을 찾기 보다 식습관을 돌아보는 것이 중요합니다.</p>
+                            </a>
+                            <article class="slide-text">
+                                <ul class="tag">
+                                    <li><a href="#"> #식습관</a></li>
+                                    <li> <a href="#">#다이어트</a> </li>
+                                    <li> <a href="#"> #올가홀 푸드</a></li>
+                                </ul>
+                            <span class="date">2019-03-15</span>
+                        </article>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="news">
+                            <span class="minitag minitag3">기업뉴스</span>
+                            <a href="#">
+                                <img src="img/news6.png" alt="성공창업아카데미">
+                                <h3>올가홀푸드, 가맹브랜드 바이올가(by ORGA) 
+                                        ‘성공창업아카데미’ 개최 </h3>
+                                    
+                                <p>올가홀푸드가 친환경 식품, 전문 마켓 등에 관심이 많은 모든 사람과
+                                    예비 창업자를 대상으로 창업 아카데미를 무료로 개최한다. </p>
+                            </a>      
+                            <article class="slide-text">
+                                <ul class="tag">
+                                    <li> <a href="#"> #풀무원</a></li>
+                                    <li> <a href="#"> #친환경</a></li>
+                                    <li> <a href="#">#올가홀 푸드</a></li>
+                                </ul>
+                                 <span class="date">2019-03-08</span>
+                        </article>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="news">
+                        <span class="minitag minitag4">로하스레시피</span>
+                        <a href="#">
+                            <img src="img/news5.png" alt="두부볶음우동">
+                            <h3>[211레시피] 두부볶음우동 </h3>
+                            
+                            <p>삶지않아 간단한 볶음우동 풀무원만의 두부 볶음우동 레시피를 
+                                    따라하고 눈과 입 모두 즐거운 홈파티를 해보세요.</p>
+                        </a>  
+                        <article class="slide-text">
+                            <ul class="tag">
+                                <li>  <a href="#"> #레시피</a></li>
+                                <li> <a href="#">#바른먹거리</a></li>
+                                <li>  <a href="#"> #풀무원 로하스</a></li>
+                            </ul> 
+                            <span class="date">2019-02-29</span>
+                    </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">                        
+                    <div class="news">
+                        <span class="minitag minitag2">브랜드뉴스</span>
+                        <a href="">
+                            <img src="img/news4.png" alt="얇은피곽찬속만두">
+                            <h3>풀무원, ‘얇은피꽉찬속 만두’ 출시 한 달 만에 
+                                    120만봉지 판매... </h3>
+                                    
+                            <p>풀무원식품은 출시 약 한 달 만에 120만 봉지를 판매한 ‘생가득 
+                                    얇은피꽉찬속 만두’ 흥행에 힘입어 4월 냉동만두 시장에서 풀무원이 
+                                    점유율 15.6%로 2위에 올랐다고 밝혔다.</p>
+                        </a>        
+                        <article class="slide-text">
+                            <ul class="tag">
+                                <li>  <a href="#">  #신제품</a></li>
+                                <li> <a href="#"> #풀무원푸드</a></li>
+                                <li> <a href="#"> #관찬만두</a></li>
+                            </ul>
+                            <span class="date">2019-02-21</span>
+                        </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="news">
+                            <span class="minitag minitag2">브랜드뉴스</span>
+                            <a href="#">
+                                <img src="img/news2.jpg" alt="글로벌기준 지주회사">
+                                <h3>창사 35주년 ㈜풀무원, 글로벌기준 지주회사 
+                                        지배구조체제 확립 선언 </h3>                                       
+                                <p>올해 5월 창사 35주년을 맞은 ㈜풀무원이 선진국형 글로벌 지주회사
+                                        지배구조체제 확립하고, 글로벌로하스기업으로 도약을 선언했다.  </p>
+                            </a>
+                            <article class="slide-text">
+                                <ul class="tag">
+                                    <li> <a href="#"> #풀무원</a></li>
+                                    <li> <a href="#"> #지주회사</a></li>
+                                    <li> <a href="#"> #글로벌하우스</a></li>
+                                </ul>
+                                <span class="date">2019-0-11</span>
+                        </article>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="news">
+                            <span class="minitag minitag2">브랜드뉴스</span>
+                            <a href="#">
+                            <img src="img/news3.png" alt="곤약면 라이트누들">
+                            <h3>풀무원, 맛있게 칼로리 조절하는 곤약면 
+                                    ‘라이트누들’ 6종 출시 </h3>
+                                   
+                            <p>병아리콩, 올방개, 콩가루를 첨가해 식감, 맛, 영양을 개선한 곤약면 개발
+                                    성공‘가쓰오냉소바’, ‘매콤비빔’, ‘동치미’ 등 다양한 맛 출시...</p>
+                            </a>       
+                            <article class="slide-text">
+                                <ul class="tag">
+                                    <li> <a href="#"> #신제품</a></li>
+                                    <li> <a href="#">  #곤약면</a></li>
+                                    <li>  <a href="#">  #라이트누들 </a></li>
+                                </ul>
+                                <span class="date">2019-02-21</span>
+                        </article>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="news">
+                            <span class="minitag minitag2">브랜드뉴스</span>
+                            <a href="#">
+                            <img src="img/news1.jpg" alt="52기 주부모니터 모집">
+                                <h3>풀무원 식품기술연구소, 2019년 
+                                        하반기 식품 주부모니터 모집	 </h3>
+                                        
+                                <p>풀무원 식품 기술연구소에서 고객의 의견을 신속하고 생생하게 듣고자
+                                        식품 주부모니터를 모집합니다.  </p>
+                            </a>
+                            <article class="slide-text">
+                                <ul class="tag">
+                                    <li> <a href="#"> #풀무원</a></li>
+                                    <li> <a href="#"> #풀무원식품</a></li>
+                                    <li> <a href="#">#풀무원다논</a></li>
+                                </ul>
+                                <span class="date">2019-02-02</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- /뉴스룸끝------------------------------------------------ -->
+        <article class="factory">
+            <div class="center">
+                <img src="img/dufu.png" alt="">
+                <div class="text-box">
+                    <h2>풀무원의 두부농장</h2>
+                    <p>풀무원의 유기농 두부들을 직접 보고 체험해 보세요!</p>
+                </div>
+                <a href="#" class="box">견학가기</a>
+            </div>
+        </article>
+        <!-- 공장끝---------------------------- -->
+    </section>
+    <footer class="center">
+        <h1><img src="img/greylogo.png" alt="풀무원로고"></h1>
+        <div class="row">
+            <div class="sns">
+                <b>공식계정</b>                
+                <span class="fas fa-caret-right"></span>
+                <div class="sns-link">
+                    <a href="#"class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="site-nav">            
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">이메일 무단수집거부</a></li>
+                <li><a href="#">사이버 감사실</a></li>
+                <li><a href="#">고객기쁨센터</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <ul class="address">
+                <li>법인명:(주)풀무원</li>
+                <li>서울시 강남구 광평로 280 로즈데이빌딩</li>
+                <li>대표전화:080-022-0085</li>
+            </ul>
+        </div>
+        <small>copyright @ plmuine co. ltd All right reserved</small>
+    </footer>
+    <div class="family-site">
+        <a href="#">계열사/브랜드사이트 <i class="fas fa-angle-up"></i></a>         
+        <div class="drop-up">
+            <span></span>
+            <div>               
+                <ul>
+                    <li>
+                        <h2 class="on">풀무원</h2>
+                        <ul class="site">
+                            <li><a href="#">뮤지엄김치간</a> </li>
+                            <li><a href="#">로하스 아카데미</a> </li>
+                            <li><a href="#">원경선 기념관</a> </li>
+                            <li><a href="#">풀무원샵</a> </li>
+                            <li><a href="#">풀무원 소셜웹진</a> </li>
+                            <li><a href="#">풀무원 채용</a> </li>
+                            <li><a href="#">풀무원 재단</a> </li>
+                            <li><a href="#">풀무원 지속경영</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>계열사</h2>
+                        <ul class="site">
+                            <li><a href="#">올가홀푸드</a> </li>
+                            <li><a href="#">엑소후레쉬</a> </li>
+                            <li><a href="#">푸드머스</a> </li>
+                            <li><a href="#">풀무원 건강생활</a> </li>
+                            <li><a href="#">풀무원 다논</a> </li>
+                            <li><a href="#">풀무원 샘물</a> </li>
+                            <li><a href="#">풀무원 푸드앤김치</a> </li>
+                            <li><a href="#">Pulmuone Foods USA</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>브랜드</h2>
+                        <ul class="site">
+                            <li><a href="#">W브랜드</a> </li>
+                            <li><a href="#">브루스케다</a> </li>
+                            <li><a href="#">아미오</a> </li>
+                            <li><a href="#">잇슬림</a> </li>
+                            <li><a href="#">풀무원 더스킨</a> </li>
+                            <li><a href="#">풀무원 녹즙</a> </li>
+                            <li><a href="#">풀무원 로하스</a> </li>
+                            <li><a href="#">풍경마루 </a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>            
+    </div>
+    <div class="loading">
+        <span>LOADING...</span>
+    </div>
+</body>
+</html>
