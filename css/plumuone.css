@@ -122,6 +122,7 @@ header.scroll .center .lang a{color: #888}
 .conviction .swiper-pagination-bullet{ 
 outline: none;width:auto; height: auto; margin: 0 10px; border-radius: 0; background: none; font-size: 32px; color: #fff; opacity: 0.5;}
 .conviction .swiper-pagination-bullet-active{font-size: 40px; opacity: 1;}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 24px}
 /* newsroom */
 #newsroom .swiper-container{position: relative; padding: 20px; box-sizing: border-box;  height: 530px; max-width: 1200px;}
 #newsroom .news>a{display: block}
